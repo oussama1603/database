@@ -1,2 +1,4 @@
-select brand,model,year,condition,price from cars
-where year <1970 and condition >= 3 and price<100000;
+select brand,model,condition,color,price from cars 
+where price between 20000 and 60000
+and condition between 1 and 3
+and color like '%red%';
