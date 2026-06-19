@@ -1,4 +1,4 @@
-select brand,model,condition,color,price from cars 
-where price between 20000 and 60000
-and condition between 1 and 3
-and color like '%red%';
+select brand,model,condition,price,color,year,sold from cars 
+where (color like '%red%' 
+or year between 1960 and 1969)
+and sold is false;
