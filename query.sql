@@ -1,4 +1,3 @@
-select brand,model,price,color,sold from cars
-where (brand not in ('Ford','Triumph','Chevrolet','Dodge')
-or price < 500000)
-and sold is true;
+select brand,model,condition,year,price from cars
+where sold is false and condition != 5
+order by condition desc ,price;
