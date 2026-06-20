@@ -1,4 +1,3 @@
-select brand,model,condition,price,color,year,sold from cars 
-where (color like '%red%' 
-or year between 1960 and 1969)
+select brand,model,price,sold from cars
+where brand in ('Ford','Chevrolet','Ferrari')
 and sold is false;
