@@ -1,4 +1,4 @@
-select brand,model,condition,year from cars 
-where year in (1961,1963,1965,1967,1969)
-and condition >=3
-and sold is false;
+select brand,model,price,color,sold from cars
+where (brand not in ('Ford','Triumph','Chevrolet','Dodge')
+or price < 500000)
+and sold is true;
