@@ -1,5 +1,2 @@
-select brand,model,condition,year,price from cars
-where color like '%red%'
-and sold is false
-order by price 
-limit 2;
+select max(price) as most_expensive from cars
+where sold is true;
