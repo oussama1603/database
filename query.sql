@@ -1,5 +1,5 @@
-select color ,count(color) from cars
-where sold is false 
-group by color
-having count(color) > 2
-order by count(color) desc;
+insert into cars(
+  brand,model,year,price,condition,sold
+  )values(
+    'Chevrolet','Bel Air',1955,50000,'purple',5,false
+)
