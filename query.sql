@@ -1,2 +1,2 @@
-select brand,price,year from cars
-where year between 1900 and 1990;
+select brand,model,year,count(price) as count_price from cars
+where count_price > 50000;
