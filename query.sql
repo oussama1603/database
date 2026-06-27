@@ -1,2 +1,1 @@
-select brand,model,year,count(price) as count_price from cars
-where count_price > 50000;
+select coalesce(model,'model not privided') from cars;
